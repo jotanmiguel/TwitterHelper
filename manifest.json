@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "TwitterHelper",
+  "version": "1.0",
+  "description": "Firefox Extension to elevate you Twitter/X experience.",
+  "permissions": ["clipboardWrite"],
+  "host_permissions": ["*://x.com/*", "*://twitter.com/*"],
+  "icons": {
+    "16": "icons/trollstar.png",
+    "48": "icons/trollstar.png",
+    "128": "icons/trollstar.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*", "*://twitter.com/*"],
+      "js": ["src/script.js"]
+    }
+  ]
+}
