@@ -3,12 +3,18 @@
   "name": "TwitterHelper",
   "version": "1.0",
   "description": "Firefox Extension to elevate you Twitter/X experience.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bed37e07-4a01-4720-980a-01a7cfdad7e1",
+      "strict_min_version": "109.0"
+    }
+  },
   "permissions": ["clipboardWrite"],
   "host_permissions": ["*://x.com/*", "*://twitter.com/*"],
   "icons": {
-    "16": "icons/trollstar.png",
-    "48": "icons/trollstar.png",
-    "128": "icons/trollstar.png"
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-16.png"
   },
   "content_scripts": [
     {
